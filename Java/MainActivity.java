@@ -24,11 +24,11 @@ public class MainActivity extends BaseActivity {
 
     private static final String TAG="MAIN";
 
-    EditText mEmailField;
-    EditText mPassField;
+    private EditText mEmailField;
+    private EditText mPassField;
 
-    Button mSignInButton;
-    Button mSignUpButton;
+    private Button mSignInButton;
+    private Button mSignUpButton;
 
 
     private FirebaseAuth mAuth;
