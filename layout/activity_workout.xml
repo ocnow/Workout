@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.omkar.workout2.WorkoutActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/endButton"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="63dp"
+        android:background="@android:color/holo_red_light"
+        android:text="END SET"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/timerValue"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="33dp"
+        android:layout_marginRight="63dp" />
+
+    <Button
+        android:id="@+id/pushupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pushups"
+        android:layout_marginStart="30dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="25dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="30dp" />
+
+    <Button
+        android:id="@+id/repButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REPS"
+        android:layout_marginStart="30dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="25dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/pushupButton"
+        android:layout_marginLeft="30dp" />
+
+    <Button
+        android:id="@+id/situpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SITUPS"
+        android:layout_marginEnd="29dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="29dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="77dp"
+        android:layout_height="42dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="29dp"
+        app:layout_constraintTop_toBottomOf="@+id/repButton"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/repButton" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Set Size"
+        android:textSize="24sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        android:layout_marginTop="111dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="110dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="146dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="28dp"
+        android:gravity="center_vertical"
+        android:text="Sets Done"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/setsDoneTextview"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="28dp" />
+
+    <TextView
+        android:id="@+id/setsDoneTextview"
+        android:layout_width="109dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="39dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="24sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/endButton"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="114dp"
+        android:layout_marginBottom="116dp"
+        app:layout_constraintTop_toTopOf="@+id/spinner"
+        android:layout_marginRight="39dp" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginStart="35dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Start set"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/timerValue"
+        app:layout_constraintRight_toRightOf="@+id/textView5"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="34dp" />
+
+    <TextView
+        android:id="@+id/timerValue"
+        android:layout_width="272dp"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:text="00:00:00"
+        android:textSize="30sp"
+        android:layout_marginStart="46dp"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="46dp" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.omkar.workout2.SelectActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="234dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="23dp"
+        android:background="@android:color/darker_gray"
+        android:onClick="getAverage"
+        android:text="Average workout plan"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Spinner
+        android:id="@+id/wtspinner"
+        android:layout_width="99dp"
+        android:layout_height="50dp"
+        app:layout_constraintRight_toLeftOf="@+id/htinspinner"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginTop="56dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/htinspinner"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="77dp"
+        android:layout_height="44dp"
+        android:text="Weight"
+        android:textSize="24sp"
+        android:layout_marginStart="41dp"
+        app:layout_constraintRight_toLeftOf="@+id/htftspinner"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/htftspinner"
+        android:layout_marginEnd="37dp"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/wtspinner"
+        android:layout_marginLeft="41dp"
+        android:layout_marginRight="37dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height"
+        android:textSize="24sp"
+        android:layout_marginStart="41dp"
+        app:layout_constraintRight_toLeftOf="@+id/htftspinner"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="44dp"
+        android:layout_marginTop="29dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="41dp"
+        android:layout_marginRight="44dp" />
+
+    <Spinner
+        android:id="@+id/htftspinner"
+        android:layout_width="86dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="73dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="71dp"
+        app:layout_constraintRight_toRightOf="@+id/wtspinner"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/wtspinner"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/button3"
+        android:layout_marginLeft="73dp"
+        android:layout_marginRight="71dp" />
+
+    <Spinner
+        android:id="@+id/htinspinner"
+        android:layout_width="85dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="37dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/htftspinner"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="21dp"
+        app:layout_constraintTop_toBottomOf="@+id/wtspinner"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="37dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="66dp"
+        android:background="@android:color/darker_gray"
+        android:onClick="workout"
+        android:text="workout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginLeft="81dp"
+        android:layout_marginRight="81dp"
+        android:layout_marginStart="81dp"
+        android:background="@android:color/darker_gray"
+        android:onClick="updateWeightAndHeight"
+        android:text="Update weight and height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+</android.support.constraint.ConstraintLayout>
