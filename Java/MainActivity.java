@@ -78,7 +78,7 @@ public class MainActivity extends BaseActivity {
                 if(task.isSuccessful())
                 {
                     Log.d(TAG,"CreatedUserWithEmail:Success");
-                    FirebaseUser user=mAuth.getCurrentUser();
+                    //FirebaseUser user=mAuth.getCurrentUser();
                     //updateUI(user);
                     hideProgressDialog();
                     Toast.makeText(getApplicationContext(),"Created user successfully",Toast.LENGTH_SHORT).show();
@@ -86,7 +86,7 @@ public class MainActivity extends BaseActivity {
                 else
                 {
                     Log.w(TAG,"CreateUserWithEmail:Failure");
-                    FirebaseUser user=mAuth.getCurrentUser();
+                    //FirebaseUser user=mAuth.getCurrentUser();
                     //updateUI(user);
                     hideProgressDialog();
                     Toast.makeText(getApplicationContext(),"Created user failure",Toast.LENGTH_SHORT).show();
@@ -98,7 +98,7 @@ public class MainActivity extends BaseActivity {
     public void signIn(View v)
     {
         final String email=mEmailField.getText().toString();
-        String password=mPassField.getText().toString();
+        final String password=mPassField.getText().toString();
         Log.d(TAG,"signIn:"+email);
         if(!validateForm())
         {
@@ -112,13 +112,14 @@ public class MainActivity extends BaseActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Log.d(TAG,"signInWithEmail:Success");
-                    FirebaseUser user=mAuth.getCurrentUser();
+                   // FirebaseUser user=mAuth.getCurrentUser();
+                    //updateUI(user);
                     Intent intent=new Intent(MainActivity.this,SelectActivity.class);
                     startActivity(intent);
                 }
                 else{
                     Log.w(TAG,"signInWithEmail:Failure");
-                    FirebaseUser user=mAuth.getCurrentUser();
+                   // FirebaseUser user=mAuth.getCurrentUser();
                    // updateUI(user);
                     hideProgressDialog();
 
