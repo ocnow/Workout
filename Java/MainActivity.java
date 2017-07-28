@@ -54,7 +54,7 @@ public class MainActivity extends BaseActivity {
     public void onStart()
     {
         super.onStart();
-        FirebaseUser currentUser=mAuth.getCurrentUser();
+       // FirebaseUser currentUser=mAuth.getCurrentUser();
         //updateUI(currentUser);
     }
 
