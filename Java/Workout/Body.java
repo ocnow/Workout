@@ -1,19 +1,19 @@
 package com.example.omkar.workout2.Workout;
 
-/**
- * Created by Omkar on 6/10/2017.
- */
-
+/*
+Body class stores user's weight and height and provides and abstract interface to outside
+classes*/
 public class Body {
-    int weight;
-    float height;
+    private int weight;
+    private float height;
 
-
+    //Constructor
     public Body(int w,float h) {
         weight = w;
         height = h;
     }
 
+    //Getters and setters
     public int getWeight()
     {
         return weight;
@@ -34,7 +34,7 @@ public class Body {
         height=h;
     }
 
-
+    //Function to check whether given weight and height are in region using neighbour regression.
     public boolean  isInside(int wt,float ht)
     {
         float L2dist=((ht-this.height)*(ht-this.height))+((wt-this.weight)*(ht-this.height));
