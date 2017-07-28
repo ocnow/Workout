@@ -1,14 +1,12 @@
 package com.example.omkar.workout2.Workout;
 
-/**
- * Created by Omkar on 6/10/2017.
- */
+/*Workout class stores users pushups,situps and repitions*/
 
 public class Workout
 {
-    int pushups;
-    int situps;
-    int reps;
+    private int pushups;
+    private int situps;
+    private int reps;
 
     public Workout(int pushups,int situps,int reps)
     {
