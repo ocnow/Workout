@@ -4,9 +4,9 @@ import android.app.ProgressDialog;
 import android.support.annotation.VisibleForTesting;
 import android.support.v7.app.AppCompatActivity;
 
-/**
- * Created by Omkar on 6/10/2017.
- */
+/*
+Class for showing and hiding process dialog
+*/
 
 public class BaseActivity extends AppCompatActivity {
 
